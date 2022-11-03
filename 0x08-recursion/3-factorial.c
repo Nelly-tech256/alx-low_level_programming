@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * factorial ->function of a given factorial
- * @n: number
- * Return: an interger
- **/
-int factorial(int n);
+ * factorial - a function that returns the factorial of a given number.
+ * @n: integer arams
+ * Return: recursion
+ */
+
+int factorial(int n)
 {
 	if (n < 0)
 	{
