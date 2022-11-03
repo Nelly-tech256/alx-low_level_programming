@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- *_pow_recursion -> power using recursion
- *@x: x ^ y
- *@y: the power number
+ * _pow_recursion - power using recursion
+ * the value of x raised tothe power of y
+ * @x: integer params
+ * @y: the power number
  * Return : power result
  **/
+
 int _pow_recursion(int x, int y)
 
 {
