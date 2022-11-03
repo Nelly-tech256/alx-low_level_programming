@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * _pow_recursion - power using recursion
- * the value of x raised tothe power of y
+ * _pow_recursion - a function that returns
+ * the value of x raised to the power of y
  * @x: integer params
- * @y: the power number
- * Return : power result
- **/
+ * @y: integer paramtr
+ * Return: recursion
+ */
+
 
 int _pow_recursion(int x, int y)
-
 {
 	if (y < 0)
 	{
