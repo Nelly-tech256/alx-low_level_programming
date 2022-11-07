@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /**
- * _strchr -  a function that locates a character in a string.
+ * _strchr - a function that locates a character in a string.
  * @s: pointer to char
- * @c: char parameter to find
+ * @c: char params to found
  * Return: *S
- */
+*/
 
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
 {
 	while (*s != '\0')
 	{
@@ -22,5 +22,5 @@ char *_strchr(char *s, char c);
 	{
 		return (s);
 	}
-	return (0);
+return (0);
 }
