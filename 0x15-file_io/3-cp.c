@@ -3,35 +3,31 @@
 #include <stdio.h>
 
 /**
- * error_file - cheacks if file can be opened.
- * @file_from: file_from
- * @file_to: file_to
- * @argv: arguments vector
- * Return: no return
- *
+ * error_file - checks if files can be opened.
+ * @file_from: file_from.
+ * @file_to: file_to.
+ * @argv: arguments vector.
+ * Return: no return.
  */
-
-void error_file(int file_from, int  file_to, char *argv[])
+void error_file(int file_from, int file_to, char *argv[])
 {
 	if (file_from == -1)
 	{
-		dprintf(STDERR_FILENO, " Error: cannot read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	if (file_to == -1)
 	{
-		dprintf(STDERR_FILENO, " Error: cannot write to %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 }
 
 /**
- * main - check the code for student
- * @argc: number of arguments to the screen
- * @argv: argument vector
- *
- * Return: always 0.
- *
+ * main - check the code of students.
+ * @argc: number of arguments.
+ * @argv: arguments vector.
+ * Return: Always 0.
  */
 int main(int argc, char *argv[])
 {
@@ -63,18 +59,16 @@ int main(int argc, char *argv[])
 	err_close = close(file_from);
 	if (err_close == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Cannot close fd %d\n", file_from);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
 		exit(100);
 	}
 
-	err_close = close(file_from);
+	err_close = close(file_to);
 	if (err_close == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Cannot close fd %d\n", file_from);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
 		exit(100);
 	}
 	return (0);
 }
-
-
 
